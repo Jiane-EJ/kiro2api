@@ -13,7 +13,7 @@
 | 渠道 | Claude 协议 | OpenAI 协议 | 免费 | AugmentCode | 备注 |
 |------|:-----------:|:-----------:|:----:|:-----------:|------|
 | Kiro | ✅ | ✅ | ❌ | ✅ | ⭐ AugmentCode 推荐渠道 |
-| Antigravity | ✅ | ✅ | ❌ | ✅ | ⭐ AugmentCode 推荐渠道，已做特征清洗、防封、遥测处理 |
+| Antigravity | ✅ | ✅ | ❌ | ✅ | ⭐ AugmentCode 推荐渠道 |
 | Warp | ✅ | ✅ | ❌ | ❌ | |
 | Orchids | ✅ | ✅ | ❌ | ❌ | ⚠️ 暂停出售 |
 | ClaudeCode | ✅ | — | ❌ | ❌ | 仅支持 Claude 协议 |

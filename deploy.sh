@@ -2,7 +2,7 @@
 
 set -e
 
-BETA_IMAGE="ssmdo/codefreemax:beta"
+LATEST_IMAGE="ssmdo/codefreemax:latest"
 
 command_exists() {
     command -v "$1" >/dev/null 2>&1
@@ -25,14 +25,14 @@ if [ "$compose_cmd" = "none" ]; then
     exit 1
 fi
 
-echo "==> Pulling beta image: $BETA_IMAGE"
-docker pull "$BETA_IMAGE"
+echo "==> Pulling latest image: $LATEST_IMAGE"
+docker pull "$LATEST_IMAGE"
 
 echo "==> Stopping current container..."
 $compose_cmd down
 
-echo "==> Starting with beta image..."
-DOCKER_IMAGE="$BETA_IMAGE" $compose_cmd up -d --force-recreate --remove-orphans
+echo "==> Starting with latest image..."
+DOCKER_IMAGE="$LATEST_IMAGE" $compose_cmd up -d --force-recreate --remove-orphans
 
 echo "==> Done! Current image:"
 docker inspect --format='{{.Config.Image}}' codefreemax 2>/dev/null || echo "(container not yet running)"
